@@ -1,0 +1,100 @@
+/*
+Theme Name: JackTheme
+Theme URI: http://jackusher.co.uk/
+Author: Jack Usher
+Author URI: http://jackusher.co.uk/
+Description: A theme for Jack's personal site.
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: test, jack, usher
+*/
+
+/* SECTION I: THEME GLOBAL STYLES, CLASSES, AND PRE-REQUISITES. */
+/* I.a. Container styles and proportions. */
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    padding: 0;
+	margin: 0;
+	font-family: 'Muli', sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1040px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #fff;
+}
+
+/* I.a.i. Main column area proportions. NB. These are legacy styles from index.php. */
+.site-content {
+	display: inline-block;
+}
+
+.main-column {
+	width: 66%;
+	float: left;
+	margin: 0px 15px 0 0;
+}
+
+/* I.b. Global element styles. */
+a:link,
+a:visited {
+	color: #006ec3;
+}
+
+p {
+	line-height: 1.65em;
+	margin: 0 0 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 1em 0;
+	font-weight: normal;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* I.c. Clearfix class for floats. */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* I.d. Global menu standards and general styles. */
+.site-nav {
+	position: relative;
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
+.site-nav ul:after { clear: both; }
+.site-nav ul { *zoom: 1; }
+
+.site-nav ul li {
+	list-style: none;
+	float: left;
+}
+
+.site-nav ul li a:link,
+.site-nav ul li a:visited {
+	display: block;
+}
