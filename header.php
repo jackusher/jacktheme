@@ -3,7 +3,7 @@
 	<!-- This file defines the content and behaviour of the theme header. -->
 	<!-- Putting header information in place, including fonts. -->
 	<head>
-		<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width">
 		<title><?php bloginfo('name'); ?></title>
