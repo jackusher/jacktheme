@@ -60,23 +60,18 @@ img {
 
 /* I.d. Content container proportions. */
 .site-header {
-	width: 9%;
-	float: left;
+	width: 100%
 	position: fixed;
-	background-color: #fff;
 }
 
 .content-wrapper {
-	width: 91%;
-	float: right;
-	margin: 0;
-	padding: 0;
-	background-color: #aec6cf;
+	margin: 0.5rem;
+	padding: 1rem;
 }
 
 /* I.e. Global menu styles. */
 .site-nav {
-	padding: 10px 0 0 30px;
+	position: relative;
 }
 
 .site-nav ul {
@@ -84,8 +79,13 @@ img {
 	padding: 0;
 }
 
+.site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
+.site-nav ul:after { clear: both; }
+.site-nav ul { *zoom: 1; }
+
 .site-nav ul li {
 	list-style: none;
+	float: left;
 }
 
 .site-nav ul li a:link,
@@ -97,20 +97,65 @@ img {
 
 /* SECTION II: HEADER OBJECTS. */
 /* II.a. Main menu. */
+.site-header {
+	background-color: #2D3039;
+	border-bottom: 4px solid #113B92;
+}
+
+.site-header nav {
+	padding: 5px 0 0 0;
+	margin-left: 15rem;
+}
+
 .site-header nav ul li {
-	padding: 0 0 15px 0;
+	padding: 25px 30px 30px 30px;
+	margin: 0 10px 0 0;
+	display: inline;
+}
+
+.site-header nav ul li:last-of-type {
+	margin: 0;
 }
 
 .site-header nav li a {
-	color: #525252;
+	color: #FFFFF8;
 	text-decoration: none;
 	font-size: 1.2rem;
+}
+
+.site-header nav ul li:hover { /* Universal hover li colour. */
+	background-color: #6e6e6e;
+	border-radius: 2px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
 }
 
 
 
 /* SECTION III: MAIN CONTENT AREA. */
 /* III.a. General proportions and styles. */
-.site-content {
-	padding: 10px;
+.header-title {
+	font-size: 1rem;
+	position: absolute;
+	padding: 22px 15px 22px 15px;
+	margin-left: 22px;
+	background-color: #113B92;
+}
+
+.header-title a {
+	text-decoration: none;
+	color: #FFFFF8;
+}
+
+.header-title h1 {
+	margin: 0;
+}
+
+
+
+/* SECTION IV: FOOTER. */
+/* IV.a. Dimensions and margins. */
+.site-footer {
+	margin: 0.5rem;
+	padding: 1rem;
 }

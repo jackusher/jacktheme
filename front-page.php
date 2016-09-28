@@ -5,9 +5,7 @@
 get_header(); ?>
 
 <!-- site-content -->
-<div class="content-wrapper">
-
-<div class="site-content"><?php
+<div class="content-wrapper"><?php
 
 	if (have_posts()) :
 		while (have_posts()) : the_post();
@@ -20,7 +18,7 @@ get_header(); ?>
 			echo '<p>No content found!</p>';
 	endif;?>
 
-</div><!-- /site-content -->
+</div><!-- /content-wrapper -->
 
 <?php
 // Grab the footer.

@@ -11,8 +11,6 @@
 		</div>
 	
 	</footer>
-	
-</div><!-- /content-wrapper -->
 
 </div><!-- /container -->
 
