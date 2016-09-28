@@ -25,16 +25,11 @@ body {
 	color: #333;
 }
 
-html,
-body {
-	overflow-x: hidden;
-}
-
 .container {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0.4rem;
-	background-color: #ddd;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	position: relative;
 }
 
 /* I.b. Global element styles. */
@@ -62,3 +57,60 @@ img {
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
+
+/* I.d. Content container proportions. */
+.site-header {
+	width: 9%;
+	float: left;
+	position: fixed;
+	background-color: #fff;
+}
+
+.content-wrapper {
+	width: 91%;
+	float: right;
+	margin: 0;
+	padding: 0;
+	background-color: #aec6cf;
+}
+
+/* I.e. Global menu styles. */
+.site-nav {
+	padding: 10px 0 0 30px;
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul li {
+	list-style: none;
+}
+
+.site-nav ul li a:link,
+.site-nav ul li a:visited {
+	display: block;
+}
+
+
+
+/* SECTION II: HEADER OBJECTS. */
+/* II.a. Main menu. */
+.site-header nav ul li {
+	padding: 0 0 15px 0;
+}
+
+.site-header nav li a {
+	color: #525252;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+
+
+/* SECTION III: MAIN CONTENT AREA. */
+/* III.a. General proportions and styles. */
+.site-content {
+	padding: 10px;
+}

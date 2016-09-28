@@ -8,12 +8,13 @@ function get_theme_scripts() {
 add_action('wp_enqueue_scripts', 'get_theme_scripts');
 
 // Theme setup function. This implements all functions that are theme pre-requisites on setup.
-function testlab_setup() {
+function jack_setup() {
 
 	// Support navigation menus
-		register_nav_menus(array(
-			'primary' => __( 'Primary Menu')
-		));
+	register_nav_menus(array(
+		'primary' => __( 'Primary Menu'),
+		'footer' => __( 'Footer Menu'),
+	));
 	
 	// Support featured images, and define the theme image pre-defined sizes.
 	add_theme_support('post-thumbnails');
@@ -21,4 +22,4 @@ function testlab_setup() {
 	
 }
 
-add_action('after_setup_theme', 'testlab_setup');
+add_action('after_setup_theme', 'jack_setup');

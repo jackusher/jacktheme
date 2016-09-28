@@ -13,9 +13,17 @@
 <body <?php body_class(); ?>>
 	
 	<!-- The div 'container' includes all visible site content inside the margins. -->
-	<div class="container">
+	<div class="container clearfix">
 	
 		<!-- site-header begins. -->
 		<header class="site-header">
+		
+			<nav class="site-nav">
+				<?php
+				$args = array(
+					'theme_location' => 'primary'
+				);
+				wp_nav_menu( $args ); ?>
+			</nav>
 			
 		</header><!-- /site-header -->
