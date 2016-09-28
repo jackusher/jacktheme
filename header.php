@@ -21,6 +21,10 @@
 			<div class="header-title">	
 				<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 			</div><!-- /header-title -->
+			
+			<!-- <div class="header-contact">
+				<p><a href="mailto:<?php bloginfo('admin_email'); ?>">get in touch</a></p>
+			</div> -->
 		
 			<nav class="site-nav">
 				<?php
