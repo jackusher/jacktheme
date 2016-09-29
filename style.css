@@ -131,17 +131,7 @@ img {
 	border-bottom-left-radius: 0;
 }
 
-/* II.b. Contact button. */
-/* .header-contact {
-	position: absolute;
-	right: 1rem;
-	top: 1.95rem;
-} */
-
-
-
-/* SECTION III: MAIN CONTENT AREA. */
-/* III.a. General proportions and styles. */
+/* II.a.i. Main menu title button. */
 .header-title {
 	font-size: 1rem;
 	position: absolute;
@@ -160,14 +150,23 @@ img {
 	margin: 0;
 }
 
+/* II.b. Contact button. */
+/* .header-contact {
+	position: absolute;
+	right: 1rem;
+	top: 1.95rem;
+} */
+
+
+
+/* SECTION III: MAIN CONTENT AREA. */
+/* III.a. General proportions and styles. */
+
+
 
 
 /* SECTION IV: FOOTER. */
-/* IV.a. Dimensions and margins. */
-/*.site-footer {
-	margin: 0.5rem;
-	padding: 1rem;
-}*/
+/* IV.a. Global dimensions, margins, and resets. */
 .footer {
 	padding: 1em;
 }
@@ -184,6 +183,7 @@ img {
 	text-decoration: none;
 }
 
+/* IV.b. Contact section. */
 #footer-contact {
 	background-color: #565960;
 }
@@ -193,6 +193,7 @@ img {
 	margin-right: 20px;
 }
 
+/* IV.c. Sitemap. */
 #footer-sitemap {
 	background-color: #2d3039;
 	padding-bottom: 0.75em;
@@ -212,6 +213,7 @@ img {
 	font-weight: bold;
 }
 
+/* IV.d. Copyright information. */
 #footer-copyright {
 	background-color: #2d3039;
 	padding-top: 0.75em;
