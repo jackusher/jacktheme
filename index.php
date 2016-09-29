@@ -16,15 +16,15 @@ get_header(); ?>
 			'posts_per_page'      => 2,
 			'no_found_rows'       => true,
 			'ignore_sticky_posts' => true,
-		)); ?>
+		));
 
-    	<?php while ( $query->have_posts() ) : $query->the_post() ?>
+    	while ( $query->have_posts() ) : $query->the_post();
 
-			<?php get_template_part('content', get_post_format()); ?>
+			get_template_part('content', get_post_format());
 
-		<?php endwhile ?>
+		endwhile;
 
-	<?php endforeach ?>
+	endforeach; ?>
 	
 </div><!-- /content-wrapper -->
 
