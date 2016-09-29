@@ -4,6 +4,9 @@
 // Get theme stylesheets & scripts.
 function get_theme_scripts() {
 	wp_enqueue_style('style', get_stylesheet_uri());
+	wp_enqueue_script('masonry');
+	wp_enqueue_style('masonry');
+	wp_enqueue_script('jquery');
 }
 add_action('wp_enqueue_scripts', 'get_theme_scripts');
 

@@ -193,8 +193,49 @@ img {
 
 
 
-/* SECTION IV: FOOTER. */
-/* IV.a. Global dimensions, margins, and resets. */
+/* SECTION IV: BLOG. */
+.blog-thumb {
+	float: left;
+	margin: 0 1rem 0 0;
+}
+
+.blog-thumb a img {
+	border-radius: 7.5px;
+}
+
+article.post p,
+article.post h4 {
+	margin: 0;
+	padding: 0;
+}
+
+article.post {
+	margin: 1rem;
+	position: relative;
+}
+
+article.post a {
+	text-decoration: none;
+}
+
+article.post h4 {
+	font-size: 1.5rem;
+}
+
+.blog-artcat {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 1rem;
+	padding: 0.5rem;
+	border: 2px solid red;
+	border-radius: 7.5px;
+}
+
+
+
+/* SECTION V: FOOTER. */
+/* V.a. Global dimensions, margins, and resets. */
 .footer {
 	padding: 1em;
 }
@@ -211,7 +252,7 @@ img {
 	text-decoration: none;
 }
 
-/* IV.b. Contact section. */
+/* V.b. Contact section. */
 #footer-contact {
 	background-color: #565960;
 }
@@ -221,7 +262,7 @@ img {
 	margin-right: 20px;
 }
 
-/* IV.c. Sitemap. */
+/* V.c. Sitemap. */
 #footer-sitemap {
 	background-color: #2d3039;
 	padding-bottom: 0.75em;
@@ -241,7 +282,7 @@ img {
 	font-weight: bold;
 }
 
-/* IV.d. Copyright information. */
+/* V.d. Copyright information. */
 #footer-copyright {
 	background-color: #2d3039;
 	padding-top: 0.75em;

@@ -7,20 +7,24 @@ get_header(); ?>
 <!-- site-content -->
 <div class="content-wrapper"><?php
 
-	//  Begin loop through all posts.
-	if (have_posts()) :
-		while (have_posts()) : the_post();
-	
-		// Reference to the content.php file. Post layout is pulled from content.php.
-		get_template_part('content', get_post_format());
-	
-		endwhile;
-	
-		// What to do when there's no content.
-		else :
-			echo '<p>No content found!</p>';
-		
-	endif; ?>
+$cats   = get_categories();
+$query  = new WP_Query;
+
+foreach ( $cats as $cat ) :
+    $query->query( array(
+        'cat'                 => $cat->term_id,
+        'posts_per_page'      => 2,
+        'no_found_rows'       => true,
+        'ignore_sticky_posts' => true,
+    )); ?>
+
+    <?php while ( $query->have_posts() ) : $query->the_post() ?>
+
+		<?php get_template_part('content', get_post_format()); ?>
+
+    <?php endwhile ?>
+
+<?php endforeach ?>
 	
 </div><!-- /content-wrapper -->
 
