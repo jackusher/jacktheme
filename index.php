@@ -7,28 +7,27 @@ get_header(); ?>
 <!-- site-content -->
 <div class="content-wrapper"><?php
 
-$cats   = get_categories();
-$query  = new WP_Query;
+	$cats   = get_categories();
+	$query  = new WP_Query;
 
-foreach ( $cats as $cat ) :
-    $query->query( array(
-        'cat'                 => $cat->term_id,
-        'posts_per_page'      => 2,
-        'no_found_rows'       => true,
-        'ignore_sticky_posts' => true,
-    )); ?>
+	foreach ( $cats as $cat ) :
+    	$query->query( array(
+			'cat'                 => $cat->term_id,
+			'posts_per_page'      => 2,
+			'no_found_rows'       => true,
+			'ignore_sticky_posts' => true,
+    	));
 
-    <?php while ( $query->have_posts() ) : $query->the_post() ?>
+    	while ( $query->have_posts() ) : $query->the_post()
 
-		<?php get_template_part('content', get_post_format()); ?>
+		get_template_part('content', get_post_format());
 
-    <?php endwhile ?>
+    	endwhile
 
-<?php endforeach ?>
+	endforeach ?>
 	
-</div><!-- /content-wrapper -->
+</div><!-- /content-wrapper --><?php
 
-<?php
 // Grab the footer.
 get_footer();
 ?>

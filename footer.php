@@ -14,7 +14,7 @@
 				);
 				wp_nav_menu( $args ); ?>
 			</nav>
-		</section>
+		</section><!-- /footer-sitemap -->
 		
 		<!-- Creating the 'copyright' location for copyright info. -->
 		<section id="footer-copyright" class="footer">

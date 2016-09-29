@@ -33,6 +33,6 @@
 					'theme_location' => 'primary'
 				);
 				wp_nav_menu( $args ); ?>
-			</nav>
+			</nav><!-- /site-nav -->
 			
 		</header><!-- /site-header -->

@@ -6,12 +6,12 @@ content.php contains the main post article elements for post lists (index, artic
 			
 	<div class="blog-thumb"><!-- Thumbnails, including countpost logic. -->
 		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('standard-blog-thumbnail'); ?></a>
-	</div><!-- /section1-thumb -->
+	</div><!-- /blog-thumb -->
 				
 	<div class="blog-info"><!-- Post titles and excerpts. -->
 		<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4><?php
 		the_excerpt(); ?>
-	</div><!-- /section1-info -->
+	</div><!-- /blog-info -->
 			
 	<div class="blog-artcat"><!-- Post categories. -->
 		<span>
@@ -27,6 +27,6 @@ content.php contains the main post article elements for post lists (index, artic
 			}
 			?>
 		</span>
-	</div><!-- /section1-cat -->
+	</div><!-- /blog-artcat -->
 			
-</article><!-- /section1-article -->
+</article><!-- /post -->
