@@ -5,18 +5,43 @@
 get_header(); ?>
 
 <!-- site-content -->
-<div class="content-wrapper"><?php
+<div class="content-wrapper">
 
-	if (have_posts()) :
-		while (have_posts()) : the_post();
-			
-		the_content();
+	<div id="front-section1">
 	
-		endwhile;
-		// What to do when there's no content.
-		else :
-			echo '<p>No content found!</p>';
-	endif;?>
+		<section id="section1-title">
+		
+		</section>
+		
+		<section id="section1-body">
+		
+		</section>
+	
+	</div>
+	
+	<div id="front-section2">
+	
+		<section id="section1-title">
+		
+		</section>
+		
+		<section id="section1-body">
+		
+		</section>
+	
+	</div>
+	
+	<div id="front-section3">
+	
+		<section id="section1-title">
+		
+		</section>
+		
+		<section id="section1-body">
+		
+		</section>
+	
+	</div>
 
 </div><!-- /content-wrapper -->
 
