@@ -18,7 +18,7 @@ function jack_setup() {
 	
 	// Support featured images, and define the theme image pre-defined sizes.
 	add_theme_support('post-thumbnails');
-	add_image_size('standard-thumbnail', 200, 124, true);
+	add_image_size('standard-blog-thumbnail', 200, 124, true);
 	
 }
 
