@@ -66,7 +66,7 @@ img {
 
 .content-wrapper {
 	margin: 0.5rem;
-	padding: 1rem;
+	padding: 0.5rem;
 }
 
 /* I.e. Global menu styles. */
@@ -161,7 +161,35 @@ img {
 
 /* SECTION III: MAIN CONTENT AREA. */
 /* III.a. General proportions and styles. */
+.front-section {
+	margin: 0.5rem 0.5rem 1.75rem 0.5rem;
+}
 
+.front-title {
+	float: left;
+	width: 10%;
+	padding-right: 1.5rem;
+	border-right: 2px solid #759ae7;
+}
+
+.front-body {
+	float: left;
+	width: 85%;
+	padding-left: 1.5rem;
+}
+
+.front-title {
+	text-align: right;
+}
+
+.front-title h2 {
+	font-size: 1.75rem;
+}
+
+.front-body p {
+	margin: 0;
+	padding: 0;
+}
 
 
 
