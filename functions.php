@@ -23,3 +23,28 @@ function jack_setup() {
 }
 
 add_action('after_setup_theme', 'jack_setup');
+
+// Custom appearance options, using WP appearance API.
+function jack_customise_register( $wp_customize ) {
+	
+	// WP appearance settings.
+	$wp_customize->add_setting('front-section1', array(
+		'default' => 'Hello world!',
+		'transport' => 'refresh'
+	));
+	
+	// WP appearance sections.
+	$wp_customize->add_section('jack_boxes', array(
+		'title' => __('Text Boxes', 'jacktheme'),
+		'priority' => 30
+	));
+	
+	// WP appearance controls.
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'front-section1', array (
+		'label' => __('front section 1', 'testlab'),
+		'section' => 'jack_boxes',
+		'settings' => 'front-section1'
+	)));
+}
+	
+add_action('customize_register', 'jack_customise_register');
