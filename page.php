@@ -12,7 +12,7 @@ get_header(); ?>
 		while (have_posts()) : the_post(); ?>
 	
 		<!-- Definte the article class for page layout and content. -->
-		<article class="post page">
+		<article class="page">
 		
 			<!-- Bringing in the basic content blocks (title and content). -->
 			<h2><?php the_title(); ?></h2>
