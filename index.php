@@ -11,23 +11,24 @@ get_header(); ?>
 	$query  = new WP_Query;
 
 	foreach ( $cats as $cat ) :
-    	$query->query( array(
+		$query->query( array(
 			'cat'                 => $cat->term_id,
 			'posts_per_page'      => 2,
 			'no_found_rows'       => true,
 			'ignore_sticky_posts' => true,
-    	));
+		)); ?>
 
-    	while ( $query->have_posts() ) : $query->the_post()
+    	<?php while ( $query->have_posts() ) : $query->the_post() ?>
 
-		get_template_part('content', get_post_format());
+			<?php get_template_part('content', get_post_format()); ?>
 
-    	endwhile
+		<?php endwhile ?>
 
-	endforeach ?>
+	<?php endforeach ?>
 	
-</div><!-- /content-wrapper --><?php
+</div><!-- /content-wrapper -->
 
+<?php
 // Grab the footer.
 get_footer();
 ?>
