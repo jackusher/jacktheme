@@ -5,26 +5,32 @@
 get_header(); ?>
 
 <!-- site-content -->
-<div class="content-wrapper"><?php
+<div class="content-wrapper">
 
-	$cats   = get_categories();
-	$query  = new WP_Query;
+<div class="blog-articles"><?php
+	
+	$args = array(
+		'cat' => 4,
+		'posts_per_page' => 2
+	);
+	
+	// The Query
+	$the_query = new WP_Query( $args );
 
-	foreach ( $cats as $cat ) :
-		$query->query( array(
-			'cat'                 => $cat->term_id,
-			'posts_per_page'      => 2,
-			'no_found_rows'       => true,
-			'ignore_sticky_posts' => true,
-		));
-
-    	while ( $query->have_posts() ) : $query->the_post();
-
-			get_template_part('content', get_post_format());
-
-		endwhile;
-
-	endforeach; ?>
+	// The Loop
+	if ( $the_query->have_posts() ) {
+		while ( $the_query->have_posts() ) {
+			$the_query->the_post();
+				echo "<h2>" . get_category_by_slug( $catname )->name . "</h2>";
+				get_template_part('content', get_post_format());
+		}
+		/* Restore original Post Data */
+		wp_reset_postdata();
+	} else {
+		// no posts found
+	} ?>
+	
+</div><!-- /blog-articles -->	
 	
 </div><!-- /content-wrapper -->
 

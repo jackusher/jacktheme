@@ -195,42 +195,60 @@ img {
 
 /* SECTION IV: BLOG. */
 /* IV.a. Post element styles. */
-.blog-thumb {
-	float: left;
-	margin: 0 1rem 0 0;
+.blog-articles {
+	max-width: 100%;
+	padding: 0.75rem;
 }
 
-.blog-thumb a img {
-	border-radius: 7.5px;
-}
-
-article.post p,
-article.post h4 {
-	margin: 0;
-	padding: 0;
+.blog-articles:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 
 article.post {
-	margin: 1rem;
-	position: relative;
+	float: left;
+	margin: 0 8px 8px 0;
+	width: 200px;
+	background-color: #F6F6F6;
+	padding: 0;
 }
 
-article.post a {
+article.post:last-of-type {
+	margin-right: 0;
+}
+
+.blog-info {
+	padding: 3px 5px 5px 5px;
+	border-bottom: 2px solid #bdbdbd;
+}
+
+.blog-info a {
 	text-decoration: none;
 }
 
-article.post h4 {
-	font-size: 1.5rem;
+.blog-info h4 { /* The title in each masonry brick. */
+	font-size: 1.3em;
+	margin: 2px 0 5px 0;
+}
+
+.blog-info p { /* The excerpt in each masonry brick. */
+	font-size: 0.84em;
+	display: inline;
+}
+
+article.post p.front-auth {
+	font-style: italic;
 }
 
 .blog-artcat {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	font-size: 1rem;
-	padding: 0.5rem;
-	border: 2px solid red;
-	border-radius: 7.5px;
+	background-color: #E9E9E9;
+	text-align: right;
+	padding: 5px 5px 5px 0;
+}
+
+.blog-artcat span a {
+	text-decoration: none;
 }
 
 
