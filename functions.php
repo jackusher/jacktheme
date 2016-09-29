@@ -47,7 +47,8 @@ function jack_customise_register( $wp_customize ) {
 		'label' => __('front section 1', 'testlab'),
 		'section' => 'jack_boxes',
 		'settings' => 'front-section1'
-	)));
+	)));	
+	
 }
 	
 add_action('customize_register', 'jack_customise_register');
