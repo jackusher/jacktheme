@@ -117,7 +117,8 @@ img {
 	margin: 0;
 }
 
-.site-header nav li a {
+.site-header nav li a:link,
+.site-header nav li a:visited {
 	color: #FFFFF8;
 	text-decoration: none;
 	font-size: 1.2rem;
@@ -149,7 +150,8 @@ img {
 	background-color: #113B92;
 }
 
-.header-title a {
+.header-title a:link,
+.header-title a:visited {
 	text-decoration: none;
 	color: #FFFFF8;
 }
@@ -162,7 +164,55 @@ img {
 
 /* SECTION IV: FOOTER. */
 /* IV.a. Dimensions and margins. */
-.site-footer {
+/*.site-footer {
 	margin: 0.5rem;
 	padding: 1rem;
+}*/
+.footer {
+	padding: 1em;
+}
+
+.footer p {
+	margin: 0;
+	padding: 0;
+	color: #FFFFF8;
+}
+
+.footer a:link,
+.footer a:visited {
+	color: #FFFFF8;
+	text-decoration: none;
+}
+
+#footer-contact {
+	background-color: #565960;
+}
+
+#footer-contact p {
+	display: inline;
+	margin-right: 20px;
+}
+
+#footer-sitemap {
+	background-color: #2d3039;
+	padding-bottom: 0.75em;
+}
+
+#footer-sitemap nav ul li {
+	margin: 0 20px 0 0;
+}
+
+#footer-sitemap nav ul li:last-of-type {
+	margin-right: 0;
+}
+
+#footer-sitemap nav ul li.current-menu-item a:link,
+#footer-sitemap nav ul li.current-menu-item a:visited {
+	border-bottom: 2px solid #1957d7;
+	font-weight: bold;
+}
+
+#footer-copyright {
+	background-color: #2d3039;
+	padding-top: 0.75em;
 }
