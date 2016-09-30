@@ -12,7 +12,7 @@ get_header(); ?>
 		while (have_posts()) : the_post(); ?>
 		
 			<!-- Bringing in the basic content blocks (title and content). -->
-			<h2><?php the_title(); ?></h2>
+			<h2><?php // the_title(); ?></h2>
 			<?php the_content();
 	
 		endwhile;
