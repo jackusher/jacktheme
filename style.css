@@ -124,7 +124,8 @@ img {
 	font-size: 1.2rem;
 }
 
-.site-header nav ul li:hover { /* Universal hover li colour. */
+.site-header nav ul li:hover,
+.site-header nav ul li.current-menu-item { /* Universal hover li colour. */
 	background-color: #6e6e6e;
 	border-radius: 2px;
 	border-bottom-right-radius: 0;
