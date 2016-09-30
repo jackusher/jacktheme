@@ -5,7 +5,9 @@
 get_header(); ?>
 
 <!-- site-content -->
-<div class="content-wrapper"><?php
+<div class="content-wrapper">
+
+	<div class="recent-posts"><?php
 
 	$cats   = get_categories();
 	$query  = new WP_Query;
@@ -25,6 +27,8 @@ get_header(); ?>
     	endwhile;
 
 	endforeach; ?>
+	
+	</div><!-- /recent-posts -->
 	
 </div><!-- /content-wrapper -->
 
