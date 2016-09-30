@@ -4,7 +4,7 @@
 // Grab the header.
 get_header(); ?>
 
-<!-- site-content -->
+<!-- content-wrapper -->
 <div class="content-wrapper">
 
 	<div class="recent-posts"><?php
