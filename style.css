@@ -159,7 +159,7 @@ img {
 
 
 
-/* SECTION III: MAIN CONTENT AREA. */
+/* SECTION III: HOME PAGE. */
 /* III.a. General proportions and styles. */
 .front-section {
 	margin: 0.5rem 0.5rem 2rem 0.5rem;
@@ -193,8 +193,8 @@ img {
 
 
 
-/* SECTION IV: BLOG. */
-/* IV.a. Post element styles. */
+/* SECTION IV: BLOG PAGE. */
+/* IV.a. List element styles. */
 article.post {
 	margin: 1rem 0 1rem 0;
 }
