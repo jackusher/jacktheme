@@ -195,60 +195,46 @@ img {
 
 /* SECTION IV: BLOG. */
 /* IV.a. Post element styles. */
-.blog-articles {
-	max-width: 100%;
-	padding: 0.75rem;
-}
-
-.blog-articles:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
 article.post {
-	float: left;
-	margin: 0 8px 8px 0;
-	width: 200px;
-	background-color: #F6F6F6;
-	padding: 0;
+	margin: 1rem 0 1rem 0;
 }
 
-article.post:last-of-type {
-	margin-right: 0;
+.blog-artcat {
+	float: left;
+	width: 15%;
+	text-align: right;
+	padding-right: 1.5rem;
+	border-right: 2px solid #759ae7;
+	display: block;
 }
 
 .blog-info {
-	padding: 3px 5px 5px 5px;
-	border-bottom: 2px solid #bdbdbd;
+	float: left;
+	width: 80%;
+	padding-left: 1.5rem;
 }
 
+.blog-info h4 {
+	font-size: 1.2rem;
+}
+
+.blog-artcat a,
 .blog-info a {
 	text-decoration: none;
 }
 
-.blog-info h4 { /* The title in each masonry brick. */
-	font-size: 1.3em;
-	margin: 2px 0 5px 0;
-}
-
-.blog-info p { /* The excerpt in each masonry brick. */
-	font-size: 0.84em;
-	display: inline;
-}
-
-article.post p.front-auth {
-	font-style: italic;
-}
-
 .blog-artcat {
-	background-color: #E9E9E9;
-	text-align: right;
-	padding: 5px 5px 5px 0;
+	font-size: 1.75rem;
 }
 
-.blog-artcat span a {
-	text-decoration: none;
+.blog-artcat a {
+	color: #333333;
+}
+
+.blog-artcat a:hover {
+	border: 2px solid #dde6f9;
+	border-radius: 5px;
+	background-color: #dde6f9;
 }
 
 

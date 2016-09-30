@@ -4,15 +4,6 @@ content.php contains the main post article elements for post lists (index, artic
 
 <article class="post <?php if ( has_post_thumbnail() ) { ?> has-thumbnail clearfix<?php } ?>"><!-- Start of looped post content. -->
 			
-	<div class="blog-thumb"><!-- Thumbnails, including countpost logic. -->
-		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('standard-blog-thumbnail'); ?></a>
-	</div><!-- /blog-thumb -->
-				
-	<div class="blog-info"><!-- Post titles and excerpts. -->
-		<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4><?php
-		the_excerpt(); ?>
-	</div><!-- /blog-info -->
-			
 	<div class="blog-artcat"><!-- Post categories. -->
 		<span>
 			<?php
@@ -28,5 +19,10 @@ content.php contains the main post article elements for post lists (index, artic
 			?>
 		</span>
 	</div><!-- /blog-artcat -->
+				
+	<div class="blog-info"><!-- Post titles and excerpts. -->
+		<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4><?php
+		the_excerpt(); ?>
+	</div><!-- /blog-info -->
 			
 </article><!-- /post -->

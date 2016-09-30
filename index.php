@@ -5,9 +5,7 @@
 get_header(); ?>
 
 <!-- site-content -->
-<div class="content-wrapper">
-
-<div class="blog-articles clearfix"><?php
+<div class="content-wrapper"><?php
 
 $cats   = get_categories();
 $query  = new WP_Query;
@@ -27,8 +25,6 @@ foreach ( $cats as $cat ) :
     <?php endwhile ?>
 
 <?php endforeach ?>
-
-</div><!-- /blog-articles -->
 	
 </div><!-- /content-wrapper -->
 
