@@ -205,7 +205,7 @@ article.post {
 	margin: 10px 0 10px 0;
 	padding: 0 0 20px 0;
 	border-bottom: 2px solid #DDD;
-	display: flex; /* Using flexbox to allow vertical centring of .ms-info content. */
+	display: flex; /* Using flexbox to allow vertical centring of article divs. */
 	flex-direction: row;
 	justify-content: center;
 	flex-flow: row wrap; /* Allows elements to fall down as viewport width decreases. */
@@ -246,7 +246,7 @@ article.post {
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: -3rem;
+	bottom: -3.4rem;
 	padding: 0 5px 5px 5px;
 	z-index: 25;
 	text-align: left;
@@ -262,11 +262,11 @@ article.post {
 }
 
 #recent-post:hover > .recent-info {
-	-webkit-transform: translateY(-3rem); /* Safari and Chrome */
-	-moz-transform: translateY(-3rem); /* Firefox */
-	-ms-transform: translateY(-3rem); /* IE 9 */
-	-o-transform: translateY(-3rem); /* Opera */
-	transform: translateY(-3rem);
+	-webkit-transform: translateY(-3.4rem); /* Safari and Chrome */
+	-moz-transform: translateY(-3.4rem); /* Firefox */
+	-ms-transform: translateY(-3.4rem); /* IE 9 */
+	-o-transform: translateY(-3.4rem); /* Opera */
+	transform: translateY(-3.4rem);
 }
 
 #recent-post .recent-title a {
@@ -276,15 +276,13 @@ article.post {
 }
 
 .subtle-category {
-	font-size: 0.9em;
+	font-size: 0.9rem;
 	display: inline-block;
 	margin: 0 0 1em 0;
-	border: 2px solid #d3d3d3;
-	border-radius: 5px;
 	color: #FFF;
-	background-color: #d3d3d3;
-	padding: 3px 7px;
+	padding: 10px 0 0 0;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, .33);
+	border-top: 2px solid white;
 }
 
 .subtle-category a {

@@ -62,7 +62,7 @@ get_header(); ?>
 	// Use reset to restore original query.
 	wp_reset_postdata(); ?>
 
-</div><!-- /ms-wrapper -->
+</div><!-- /recent-wrapper -->
 	
 </div><!-- /content-wrapper -->
 
