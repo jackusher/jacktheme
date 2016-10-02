@@ -240,6 +240,89 @@ article.post {
 
 
 
+#recent-wrapper {
+	max-width: 100%;
+	margin: 10px 0 10px 0;
+	padding: 0 0 20px 0;
+	border-bottom: 2px solid #DDD;
+	display: flex; /* Using flexbox to allow vertical centring of .ms-info content. */
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: row wrap; /* Allows elements to fall down as viewport width decreases. */
+}
+
+#recent-wrapper:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#recent-post {
+	float: left;
+	margin: 0 5px 5px 0;
+	width: 245px;
+	height: 184px;
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	overflow: hidden;
+	resize: vertical;
+}
+
+#recent-post .recent-thumbnail {
+	background-color: black;
+}
+
+#recent-post .recent-thumbnail {
+	position: absolute;
+	z-index: 20;
+}
+
+#recent-post img {
+	opacity: 0.4;
+}
+
+#recent-post .recent-info {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -2.25rem;
+	padding: 0 5px 5px 5px;
+	z-index: 25;
+	text-align: left;
+	box-sizing: border-box;
+}
+
+#recent-post .recent-info { /* Transition properties. */
+	-webkit-transition: all 0.275s ease; /* Safari and Chrome */
+  	-moz-transition: all 0.275s ease; /* Firefox */
+	-o-transition: all 0.275s ease; /* IE 9 */
+	-ms-transition: all 0.275s ease; /* Opera */
+	transition: all 0.275s ease;
+}
+
+#recent-post:hover > .recent-info {
+	-webkit-transform: translateY(-2.25rem); /* Safari and Chrome */
+	-moz-transform: translateY(-2.25rem); /* Firefox */
+	-ms-transform: translateY(-2.25rem); /* IE 9 */
+	-o-transform: translateY(-2.25rem); /* Opera */
+	transform: translateY(-2.25rem);
+}
+
+#recent-post .recent-title a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+#recent-post .subtle-category {
+	font-size: 0.9em;
+	display: block;
+	margin: 0 0 1em 0;
+}
+
+
+
 /* SECTION V: FOOTER. */
 /* V.a. Global dimensions, margins, and resets. */
 .footer {
