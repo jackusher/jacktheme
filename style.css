@@ -196,10 +196,6 @@ img {
 
 /* SECTION IV: BLOG PAGE. */
 /* IV.a. List element styles. */
-article.post {
-	margin: 1rem 0 1rem 0;
-}
-
 #recent-wrapper {
 	max-width: 100%;
 	margin: 10px 0 10px 0;
