@@ -63,6 +63,14 @@ get_header(); ?>
 	wp_reset_postdata(); ?>
 
 </div><!-- /recent-wrapper -->
+
+<div class="cats-wrapper">
+
+	<?php wp_list_categories( array(
+		'title_li' => ''
+	)); ?>
+	
+</div>
 	
 </div><!-- /content-wrapper -->
 
