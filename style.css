@@ -195,7 +195,7 @@ img {
 
 
 /* SECTION IV: BLOG PAGE. */
-/* IV.a. List element styles. */
+/* IV.a. Recent post section. */
 #recent-wrapper {
 	max-width: 100%;
 	margin: 10px 0 10px 0;
@@ -222,7 +222,6 @@ img {
 	box-sizing: border-box;
 	display: block;
 	overflow: hidden;
-	resize: vertical;
 }
 
 #recent-post .recent-thumbnail {
@@ -283,6 +282,46 @@ img {
 
 .subtle-category a {
 	text-decoration: none;
+}
+
+/* IV.b. Category list section. */
+.cats-wrapper {
+	display: flex; /* Using flexbox to allow vertical centring of article divs. */
+	flex-direction: row;
+	justify-content: center;
+	flex-flow: row wrap; /* Allows elements to fall down as viewport width decreases. */
+}
+
+.cats-wrapper li {
+	list-style: none;
+	display: inline-block;
+	margin: 5px;
+	border: 2px solid #2D3039;
+	border-radius: 7px;
+	padding: 15px 50px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.cats-wrapper li:hover {
+	background-color: #759ae7;
+}
+
+.cats-wrapper li:hover > a {
+	color: white;
+}
+
+.cats-wrapper li { /* Transition properties. */
+	-webkit-transition: all 0.275s ease; /* Safari and Chrome */
+  	-moz-transition: all 0.275s ease; /* Firefox */
+	-o-transition: all 0.275s ease; /* IE 9 */
+	-ms-transition: all 0.275s ease; /* Opera */
+	transition: all 0.275s ease;
+}
+
+.cats-wrapper a {
+	text-decoration: none;
+	font-size: 0.95rem;
 }
 
 
