@@ -23,6 +23,7 @@ function jack_setup() {
 	add_theme_support('post-thumbnails');
 	add_image_size('standard-blog-thumbnail', 200, 124, true);
 	add_image_size('masonry-thumbnail', 245, 184, true);
+	add_image_size('category-archive-thumbnail', 650, 140, true);
 	
 }
 

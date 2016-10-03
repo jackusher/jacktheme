@@ -7,7 +7,7 @@ get_header(); ?>
 <!-- content-wrapper -->
 <div class="content-wrapper">
 
-<div id="recent-wrapper"><!-- The container masonry element. All mason blocks go in here. -->
+	<div id="recent-wrapper"><!-- The container masonry element. All mason blocks go in here. -->
 	
 	<?php // Arguments for the WP query to pull in the latest post from each category.
 	$categories = get_categories();
@@ -64,7 +64,7 @@ get_header(); ?>
 
 </div><!-- /recent-wrapper -->
 
-<div id="cats-wrapper" class="blog-wrapper">
+	<div id="cats-wrapper" class="blog-wrapper">
 
 	<section id="cats-list-tile" class="blog-title">
 		<h2>the blog sections</h2>
@@ -78,7 +78,7 @@ get_header(); ?>
 	
 </div><!-- /cats-wrapper -->
 
-<div id="cats-blurb-wrapper" class="blog-wrapper">
+	<div id="cats-blurb-wrapper" class="blog-wrapper">
 
 	<section id="cat-blurb-title" class="blog-title">
 		<h2>what's it all about?</h2>

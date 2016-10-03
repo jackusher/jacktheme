@@ -356,6 +356,122 @@ img {
 
 
 
+/* SECTION V: SINGLE.PHP. */
+/* V.a. Titles. */
+.post h2 {
+	font-size: 2rem;
+	text-align: center;
+	margin: 0.75rem 0 0.4rem 0;
+	padding: 0;
+}
+
+.post a {
+	text-decoration: none;
+}
+
+.post .post-info {
+	text-align: center;
+	margin: 0 0 2rem 0;
+}
+
+
+
+
+/* SECTION VI: ARCHIVES. */
+/* VI.a. Archive headers. */
+.cat-archive-title {
+	text-align: center;
+	margin: 0.25rem;
+}
+
+.cat-archive-title h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 3rem;
+}
+
+.cat-descrip {
+	text-align: center;
+	/* also subtract section padding (1.5rem) */
+	padding: 2.25rem 1.5rem;
+	margin: 0.75rem -601.5rem 2rem -601.5rem;
+	background: #f6f6f6;
+	/* border has to be solid, not RGBa */
+	/* 9600px or equiv (600rem = 9600/16) */
+	border-left: 600rem solid #f6f6f6;
+	border-right: 600rem solid #f6f6f6;
+}
+
+.cat-descrip h4,
+.cat-descrip p {
+	margin: 0;
+	padding: 0;
+
+}
+
+.cat-descrip h4 {
+	font-size: 1.15rem;
+	padding: 0 6.5rem;
+}
+
+/* VI.b. Post lists. */
+.list-post {
+	margin: 5px auto;
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	overflow: hidden;
+	width: 650px;
+	height: 140px;
+}
+
+.list-post:last-of-type {
+	margin-bottom: 1.5rem;
+}
+
+.list-post a {
+	text-decoration: none;
+	color: white;
+}
+
+.list-post h4,
+.list-post p {
+	margin: 0;
+	padding: 0;
+}
+
+.blog-info {
+	position: absolute;
+	z-index: 20;
+	color: white;
+	bottom: 0;
+	left: 0;
+	padding: 0 0 5px 5px;
+}
+
+.blog-info h4 {
+	font-size: 1.5rem;
+}
+
+.archive-thumbnail {
+	position: absolute;
+	background-color: black
+}
+
+.list-post:hover img {
+	opacity: 0.4;
+}
+
+.list-post img {
+	-webkit-transition: all 0.275s ease; /* Safari and Chrome */
+  	-moz-transition: all 0.275s ease; /* Firefox */
+	-o-transition: all 0.275s ease; /* IE 9 */
+	-ms-transition: all 0.275s ease; /* Opera */
+	transition: all 0.275s ease;
+}
+
+
+
 /* SECTION V: FOOTER. */
 /* V.a. Global dimensions, margins, and resets. */
 .footer {

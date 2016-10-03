@@ -7,30 +7,25 @@ get_header(); ?>
 <!-- content-wrapper -->
 <div class="content-wrapper">
 
-	<!-- post-wrapper -->
-	<div class="post-wrapper">
-
-		<?php
-		if (have_posts()) :
-			while (have_posts()) : the_post();
+	<?php
+	if (have_posts()) :
+		while (have_posts()) : the_post();
 	
-			// Reference to the content.php file. Post layout is pulled from content.php. If there are any special post types, e.g. galleries, the second argument pushes requests to the correct content-*.php file.
-			// *if* logic: If the post is non-formatted, go to content-single.php. If the post is formatted, then go to respective content-*.php.
-			if (get_post_format() == false) {
-				get_template_part('content', 'single');
-			} else {
-				get_template_part('content', get_post_format());
-			}
+		// Reference to the content.php file. Post layout is pulled from content.php. If there are any special post types, e.g. galleries, the second argument pushes requests to the correct content-*.php file.
+		// *if* logic: If the post is non-formatted, go to content-single.php. If the post is formatted, then go to respective content-*.php.
+		if (get_post_format() == false) {
+			get_template_part('content', 'single');
+		} else {
+			get_template_part('content', get_post_format());
+		}
 	
-			endwhile;
+		endwhile;
 	
-			// What to do if there are no posts.
-			else :
-				echo '<p>No content found</p>';
+	// What to do if there are no posts.
+	else :
+		echo '<p>No content found</p>';
 	
-			endif; ?>
-			
-	</div><!-- /post-wrapper -->
+	endif; ?>
 	
 </div><!-- /content-wrapper -->
 
