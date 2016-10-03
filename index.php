@@ -64,6 +64,10 @@ get_header(); ?>
 
 </div><!-- /recent-wrapper -->
 
+<div class="cats-title">
+	<h2>The blog sections</h2>
+</div>
+
 <div class="cats-wrapper">
 
 	<?php wp_list_categories( array(

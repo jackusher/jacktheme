@@ -23,13 +23,18 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	color: #333;
+	width: 100%;
+}
+
+html,
+body {
+
 }
 
 .container {
 	margin: 0;
 	padding: 0;
 	max-width: 100%;
-	position: relative;
 }
 
 /* I.b. Global element styles. */
@@ -61,12 +66,12 @@ img {
 /* I.d. Content container proportions. */
 .site-header {
 	width: 100%
-	position: fixed;
 }
 
 .content-wrapper {
 	margin: 0.5rem;
 	padding: 0.5rem;
+	display: inline-block;
 }
 
 /* I.e. Global menu styles. */
@@ -200,7 +205,6 @@ img {
 	max-width: 100%;
 	margin: 10px 0 10px 0;
 	padding: 0 0 20px 0;
-	border-bottom: 2px solid #DDD;
 	display: flex; /* Using flexbox to allow vertical centring of article divs. */
 	flex-direction: row;
 	justify-content: center;
@@ -286,10 +290,18 @@ img {
 
 /* IV.b. Category list section. */
 .cats-wrapper {
+	margin: 20px 0;
+	padding: 0 0 30px 0;
 	display: flex; /* Using flexbox to allow vertical centring of article divs. */
 	flex-direction: row;
 	justify-content: center;
 	flex-flow: row wrap; /* Allows elements to fall down as viewport width decreases. */
+}
+
+.cats-title {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 1.25rem;
 }
 
 .cats-wrapper li {
@@ -304,7 +316,7 @@ img {
 }
 
 .cats-wrapper li:hover {
-	background-color: #759ae7;
+	background-color: #1957d7;
 }
 
 .cats-wrapper li:hover > a {

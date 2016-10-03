@@ -14,7 +14,7 @@
 <body <?php body_class(); ?>>
 	
 	<!-- The div 'container' includes all visible site content inside the margins. -->
-	<div class="container clearfix">
+	<div class="container">
 	
 		<!-- site-header begins. -->
 		<header class="site-header">
