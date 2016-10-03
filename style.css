@@ -58,10 +58,6 @@ img {
 	display: block;
 }
 
-.post p { /* Line breaks for article paragraphs. */
-	margin: 0 0 1em 0;
-}
-
 /* I.c. Clearfix class for floats. */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
@@ -133,7 +129,8 @@ img {
 }
 
 .site-header nav ul li:hover,
-.site-header nav ul li.current-menu-item { /* Universal hover li colour. */
+.site-header nav ul li.current-menu-item,
+.site-header nav ul li.current_page_parent { /* Universal hover li colour. */
 	background-color: #6e6e6e;
 	border-radius: 2px;
 	border-bottom-right-radius: 0;
@@ -383,6 +380,11 @@ img {
 	margin: 0 0 2rem 0;
 }
 
+/* V.b. Post body. */
+.post p { /* Line breaks for article paragraphs. */
+	margin: 0 0 1em 0;
+	padding: 0 10rem;
+}
 
 
 
@@ -481,8 +483,8 @@ img {
 
 
 
-/* SECTION V: FOOTER. */
-/* V.a. Global dimensions, margins, and resets. */
+/* SECTION VII: FOOTER. */
+/* VII.a. Global dimensions, margins, and resets. */
 .footer {
 	padding: 1em;
 }
@@ -499,7 +501,7 @@ img {
 	text-decoration: none;
 }
 
-/* V.b. Contact section. */
+/* VII.b. Contact section. */
 #footer-contact {
 	background-color: #565960;
 }
@@ -509,7 +511,7 @@ img {
 	margin-right: 20px;
 }
 
-/* V.c. Sitemap. */
+/* VII.c. Sitemap. */
 #footer-sitemap {
 	background-color: #2d3039;
 	padding-bottom: 0.75em;
@@ -529,7 +531,7 @@ img {
 	font-weight: bold;
 }
 
-/* V.d. Copyright information. */
+/* VII.d. Copyright information. */
 #footer-copyright {
 	background-color: #2d3039;
 	padding-top: 0.75em;
