@@ -5,22 +5,17 @@
 get_header(); ?>
 
 <!-- content-wrapper -->
-<div class="content-wrapper">
+<div class="content-wrapper"><?php
 
-	<?php
 	if (have_posts()) :
-		while (have_posts()) : the_post(); ?>
-		
-			<!-- Bringing in the basic content blocks (title and content). -->
-			<h2><?php // the_title(); ?></h2>
-			<?php the_content();
+		while (have_posts()) : the_post();
+			
+		the_content();
 	
 		endwhile;
-	
-		// What to do if there's no content.
+	// What to do when there's no content.
 	else :
 		echo '<p>No content found!</p>';
-		
 	endif; ?>
 	
 </div><!-- /content-wrapper -->

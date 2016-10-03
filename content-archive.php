@@ -1,5 +1,5 @@
 <!--
-content-archive.php contains the post article elements for category archive pages. Further types are marked by content-*.php.
+content-archive.php contains the post article elements for category archive pages.
 -->
 
 <article class="list-post"><!-- Start of looped post content. -->
