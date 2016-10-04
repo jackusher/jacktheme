@@ -183,6 +183,11 @@ img {
 	width: 85%;
 	padding-left: 1.5rem;
 	display: block;
+	text-align: center;
+}
+
+.front-body p {
+	margin: 0 0 1em 0;
 }
 
 .front-title {
@@ -193,14 +198,60 @@ img {
 	font-size: 1.75rem;
 }
 
-.front-body p {
-	margin: 0;
-	padding: 0;
+/* III.b. Section-specific. */
+#section1-body h2 {
+	font-size: 3rem;
 }
 
-/* III.b. Section-specific. */
-#front-section2 {
+#section1-body h3 {
+	font-size: 1.75rem;
+	padding: 0 3rem;
+}
 
+#front-section2 {
+	margin-bottom: 3.75rem;
+}
+
+#section2-body h4 {
+	font-size: 1.2rem;
+}
+
+#section2-body #section2-short {
+	width: 48%;
+	float: left;
+	padding-right: 15px;
+}
+
+#section2-body #section2-long {
+	width: 48%;
+	float: left;
+	padding-left: 13px;
+	border-left: 2px solid #759ae7;
+}
+
+#section3-body span {
+	margin: auto 10px;
+	padding: 15px 40px;
+	display: inline-block;
+	background-color: #759ae7;
+}
+
+#section3-body span a {
+	text-decoration: none;
+	font-size: 1.1rem;
+	color: white;
+}
+
+#section3-body span:hover {
+	background-color: #1957d7;
+}
+
+#section3-body span { /* Transition properties. */
+	-webkit-transition: all 0.275s ease; /* Safari and Chrome */
+  	-moz-transition: all 0.275s ease; /* Firefox */
+	-o-transition: all 0.275s ease; /* IE 9 */
+	-ms-transition: all 0.275s ease; /* Opera */
+	transition: all 0.275s ease;
 }
 
 

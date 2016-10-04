@@ -67,7 +67,7 @@ get_header(); ?>
 	<div id="cats-wrapper" class="blog-wrapper">
 
 	<section id="cats-list-tile" class="blog-title">
-		<h2>the blog sections</h2>
+		<h2>the sections</h2>
 	</section>
 
 	<section id="cats-list">
