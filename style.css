@@ -179,19 +179,25 @@ img {
 	margin: 0.5rem 0.5rem 2rem 0.5rem;
 }
 
+.front-section p { /* This is a hack. WP mystery <p> elements. We can remove this class when we use a plugin to not fuck up the markup. */
+	display: inline-block;
+}
+
 .front-title {
-	float: left;
+	display: inline-block;
 	width: 10%;
+	min-width: 110px;
 	padding-right: 1.5rem;
 	border-right: 2px solid #759ae7;
+	vertical-align: top;
 }
 
 .front-body {
-	float: left;
-	width: 85%;
+	width: 80%;
 	padding-left: 1.5rem;
-	display: block;
+	display: inline-block;
 	text-align: center;
+	vertical-align: top;
 }
 
 .front-body p {
@@ -228,13 +234,15 @@ img {
 
 #section2-body #section2-short {
 	width: 48%;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	padding-right: 15px;
 }
 
 #section2-body #section2-long {
 	width: 48%;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	padding-left: 13px;
 	border-left: 2px solid #759ae7;
 }
