@@ -62,33 +62,33 @@ get_header(); ?>
 	// Use reset to restore original query.
 	wp_reset_postdata(); ?>
 
-</div><!-- /recent-wrapper -->
+	</div><!-- /recent-wrapper -->
 
 	<div id="cats-wrapper" class="blog-wrapper">
 
-	<section id="cats-list-tile" class="blog-title">
-		<h2>the sections</h2>
-	</section>
+		<section id="cats-list-title" class="section-title">
+			<h2>the sections</h2>
+		</section>
 
-	<section id="cats-list">
-		<?php wp_list_categories( array(
-			'title_li' => ''
-		)); ?>
-	</section>
+		<section id="cats-list">
+			<?php wp_list_categories( array(
+				'title_li' => ''
+			)); ?>
+		</section>
 	
-</div><!-- /cats-wrapper -->
+	</div><!-- /cats-wrapper -->
 
 	<div id="cats-blurb-wrapper" class="blog-wrapper">
 
-	<section id="cat-blurb-title" class="blog-title">
-		<h2>what's it all about?</h2>
-	</section>
+		<section id="cat-blurb-title" class="section-title">
+			<h2>what's it all about?</h2>
+		</section>
 
-	<section id="cat-blurb">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut aliquet nunc. Quisque eu nulla scelerisque, mattis tortor vel, auctor elit. Maecenas sodales nunc in eros luctus venenatis. Vestibulum ullamcorper lectus ac orci volutpat, sed dapibus elit condimentum. Cras sit amet fermentum lectus. Nunc tempus eros arcu, a tincidunt ante gravida ut. In convallis nec tortor non ornare. Duis id tortor sit amet nunc ultrices pellentesque eu ac dui. Vivamus finibus, ligula et vehicula porta, est eros vehicula lacus, in interdum dui quam nec sapien. Nulla ut porta enim. Nunc ultrices sed sapien at tempus. Integer porta turpis eu lorem dapibus pharetra. Integer sed urna sed orci volutpat malesuada eget vitae tellus. Sed ex elit, posuere porttitor nunc non, maximus tempor ipsum.</p>
-	</section>	
+		<section id="cat-blurb">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut aliquet nunc. Quisque eu nulla scelerisque, mattis tortor vel, auctor elit. Maecenas sodales nunc in eros luctus venenatis. Vestibulum ullamcorper lectus ac orci volutpat, sed dapibus elit condimentum. Cras sit amet fermentum lectus. Nunc tempus eros arcu, a tincidunt ante gravida ut. In convallis nec tortor non ornare. Duis id tortor sit amet nunc ultrices pellentesque eu ac dui. Vivamus finibus, ligula et vehicula porta, est eros vehicula lacus, in interdum dui quam nec sapien. Nulla ut porta enim. Nunc ultrices sed sapien at tempus. Integer porta turpis eu lorem dapibus pharetra. Integer sed urna sed orci volutpat malesuada eget vitae tellus. Sed ex elit, posuere porttitor nunc non, maximus tempor ipsum.</p>
+		</section>	
 
-</div>
+	</div>
 	
 </div><!-- /content-wrapper -->
 

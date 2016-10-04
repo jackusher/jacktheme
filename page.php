@@ -5,7 +5,7 @@
 get_header(); ?>
 
 <!-- content-wrapper -->
-<div class="content-wrapper"><?php
+<div class="content-wrapper clearfix"><?php
 
 	if (have_posts()) :
 		while (have_posts()) : the_post();
