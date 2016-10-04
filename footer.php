@@ -18,7 +18,7 @@
 		
 		<!-- Creating the 'copyright' location for copyright info. -->
 		<section id="footer-copyright" class="footer">
-			<p>&copy; <?php bloginfo('name'); ?>, <?php echo date('Y');?></p>
+			<p>webs by Jack, &copy; <?php echo date('Y');?></p>
 		</section><!-- /footer-copyright -->
 	
 	</footer>
