@@ -744,6 +744,22 @@ img {
 	}
 }
 
+@media only screen and (max-width: 782px) {
+	.consulting-wrapper {
+		width: 100%;
+		float: none;
+		padding-right: 0;
+		border-right: 0;
+		border-bottom: 2px solid #759ae7;
+	}
+
+	.hardware-wrapper {
+		width: 100%;
+		float: none;
+		padding-left: 0;
+	}	
+}
+
 /* VII.b. Mobile-based, single-column styles. */
 @media only screen and (max-width: 613px) {
 	.front-title {
@@ -764,7 +780,9 @@ img {
 		text-align: center;
 		vertical-align: top;
 	}
-	
+}
+
+@media only screen and (max-width: 476px) {
 	#footer-contact {
 		background-color: #565960;
 		text-align: center;
