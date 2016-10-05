@@ -103,6 +103,48 @@ img {
 	display: block;
 }
 
+/* I.f. Wordpress pre-defined styles. */
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+img.alignright {
+	float:right;
+	margin:0 0 1em 1em;
+}
+
+img.alignleft {
+	float:left;
+	margin:0 1em 1em 0;
+}
+
+img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a img.alignright {
+	float:right;
+	margin:0 0 1em 1em;
+}
+
+a img.alignleft {
+	float:left;
+	margin:0 1em 1em 0;
+}
+
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 
 /* SECTION II: HEADER OBJECTS. */
@@ -216,11 +258,10 @@ img {
 }
 
 /* III.a.ii Section-specific. */
-/* #welcome-title h2 {
+.welcome-title {
 	font-size: 3rem;
-	text-align: center;
-	margin: 1rem 0 2.5rem 0;
-} */
+	margin-bottom: 2.5rem;
+}
 
 #section1-body h3 {
 	font-size: 1.75rem;
@@ -255,6 +296,14 @@ img {
 	padding: 15px 40px;
 	display: inline-block;
 	background-color: #759ae7;
+}
+
+#section3-body span:first-of-type {
+	margin-left: 0;
+}
+
+#section3-body span:last-of-type {
+	margin-right: 0;
 }
 
 #section3-body span a {
@@ -555,23 +604,27 @@ img {
 
 /* IV.b. Post body. */
 .post p { /* Line breaks for article paragraphs. */
-	margin: 0 0 1em 0;
-	padding: 0 10rem;
+	margin: 0 10%;
+	margin-bottom: 1rem;
 }
 
 
 
 /* SECTION V: ARCHIVES. */
 /* V.a. Archive headers. */
-.cat-archive-title {
+.archive-title {
 	text-align: center;
 	margin: 0.25rem;
 }
 
-.cat-archive-title h2 {
+.archive-title h2 {
 	margin: 0;
 	padding: 0;
 	font-size: 2.5rem;
+}
+
+#author-archive-title {
+	margin-bottom: 1.5rem;
 }
 
 .cat-descrip {
@@ -698,7 +751,8 @@ img {
 }
 
 #footer-sitemap nav ul li.current-menu-item a:link,
-#footer-sitemap nav ul li.current-menu-item a:visited {
+#footer-sitemap nav ul li.current-menu-item a:visited,
+#footer-sitemap nav ul li.current_page_parent {
 	border-bottom: 2px solid #1957d7;
 	font-weight: bold;
 }
@@ -719,7 +773,8 @@ img {
 		display: block;
 		vertical-align: top;
 		padding-right: 0;
-		padding-bottom: 1.25rem;
+		padding-bottom: 0.5rem;
+		border-bottom: 2px solid #ddd;
 	}
 
 	#section2-body #section2-long {
@@ -727,6 +782,7 @@ img {
 		display: block;
 		vertical-align: top;
 		padding-left: 0;
+		padding-top: 1.65rem;
 		border-left: 0;
 	}
 }
