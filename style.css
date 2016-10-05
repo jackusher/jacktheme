@@ -386,6 +386,34 @@ a img.aligncenter {
 	text-decoration: none;
 }
 
+#experience-wrapper {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+#experience-title {
+	margin-top: 30px;
+}
+
+.experience-column {
+	width: 33.2%;
+	float: left;
+	border-right: 2px solid #759ae7;
+}
+
+.experience-column:last-of-type {
+	border-right: 0;
+}
+
+.experience-column p {
+	padding: 0 1.75rem;
+}
+
+.ex-column-title {
+	font-size: 1.4rem;
+	margin-bottom: 0.75em;
+}
+
 /* III.c. Tech page. */
 .consulting-wrapper {
 	width: 48%;
@@ -787,6 +815,23 @@ a img.aligncenter {
 	}
 }
 
+@media only screen and (max-width: 1029px) {
+	#ex-column1,
+	#ex-column2 {
+		width: 49%;
+		margin-bottom: 1.25rem;
+	}
+	
+	#ex-column2 {
+		border-right: none;
+	}
+	
+	#ex-column3 {
+		float: none;
+		width: 100%;
+	}
+}
+
 @media only screen and (max-width: 985px) {
 	.front-body {
 		width: 75%;
@@ -838,6 +883,17 @@ a img.aligncenter {
 		display: block;
 		text-align: center;
 		vertical-align: top;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+	#ex-column1,
+	#ex-column2 {
+		float: none;
+		width: 100%;
+		border-right: 0;
+		border-bottom: 2px solid #759ae7;
+		padding-bottom: 1.25rem;
 	}
 }
 
