@@ -705,3 +705,63 @@ img {
 	background-color: #2d3039;
 	padding-top: 0.75em;
 }
+
+
+
+/* SECTION VII: MOBILE AND RESPONSIVE STYLES. */
+/* VII.a. Decreasing desktop viewport. */
+@media only screen and (max-width: 1098px) {
+    #section2-body #section2-short {
+		width: 100%;
+		display: block;
+		vertical-align: top;
+		padding-right: 0;
+		padding-bottom: 1.25rem;
+	}
+
+	#section2-body #section2-long {
+		width: 100%;
+		display: block;
+		vertical-align: top;
+		padding-left: 0;
+		border-left: 0;
+	}
+}
+
+@media only screen and (max-width: 985px) {
+	.front-body {
+		width: 75%;
+	}
+	
+	#section1-body h3 {
+		padding: 0 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 830px) {
+	.front-body {
+		width: 70%;
+	}
+}
+
+/* VII.b. Mobile-based, single-column styles. */
+@media only screen and (max-width: 613px) {
+	.front-title {
+		display: block;
+		width: 100%;
+		min-width: 112px;
+		padding-right: 0;
+		border-right: 0;
+		border-bottom: 2px solid #759ae7;
+		vertical-align: top;
+		text-align: center;
+	}
+
+	.front-body {
+		width: 100%;
+		padding-left: 0;
+		display: block;
+		text-align: center;
+		vertical-align: top;
+	}
+}
