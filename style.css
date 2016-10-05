@@ -178,6 +178,10 @@ img {
 	margin: 0.5rem 0.5rem 2rem 0.5rem;
 }
 
+.front-section:first-of-type {
+	margin-top: 1.5rem;
+}
+
 .front-section p { /* This is a hack. WP mystery <p> elements. We can remove this class when we use a plugin to not fuck up the markup. */
 	display: inline-block;
 }
@@ -212,11 +216,11 @@ img {
 }
 
 /* III.a.ii Section-specific. */
-#welcome-title h2 {
+/* #welcome-title h2 {
 	font-size: 3rem;
 	text-align: center;
 	margin: 1rem 0 2.5rem 0;
-}
+} */
 
 #section1-body h3 {
 	font-size: 1.75rem;
