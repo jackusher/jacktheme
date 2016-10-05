@@ -764,4 +764,19 @@ img {
 		text-align: center;
 		vertical-align: top;
 	}
+	
+	#footer-contact {
+		background-color: #565960;
+		text-align: center;
+	}
+
+	#footer-contact p {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 0.35rem;
+	}
+	
+	#footer-contact p:last-of-type {
+		margin-bottom: 0;
+	}
 }
