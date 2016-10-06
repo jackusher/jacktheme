@@ -2,7 +2,7 @@
 content-archive.php contains the post article elements for category archive pages.
 -->
 
-<article class="list-post"><!-- Start of looped post content. -->
+<article class="list-post <?php post_class(); ?>"><!-- Start of looped post content. -->
 
 	<div class="archive-thumbnail">
 		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('category-archive-thumbnail'); ?></a>

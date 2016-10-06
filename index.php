@@ -23,7 +23,7 @@ get_header(); ?>
 	
 	if ( $query->have_posts() ) { ?>
 		
-		<div id="recent-post">
+		<div id="recent-post" class="<?php post_class(); ?>">
 			<?php while ( $query->have_posts() ) {
 		
 				$query->the_post();

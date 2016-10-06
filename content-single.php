@@ -2,7 +2,7 @@
 content-single.php defines what to do with single post pages. Referred from single.php.
 -->
 
-<article class="post clearfix">
+<article class="post <?php post_class(); ?> clearfix">
 	<!-- Including post title as a link. -->
 	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	
