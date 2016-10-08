@@ -407,6 +407,11 @@ a img.aligncenter {
 
 .experience-column p {
 	padding: 0 1.75rem;
+	margin-bottom: 1rem;
+}
+
+.experience-column p:last-of-type {
+	margin-bottom: 0;
 }
 
 .ex-column-title {
