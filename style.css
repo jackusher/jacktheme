@@ -419,6 +419,10 @@ a img.aligncenter {
 	margin-bottom: 0.75em;
 }
 
+#skill-blurb section {
+	margin-top: 30px;
+}
+
 /* III.c. Tech page. */
 .consulting-wrapper {
 	width: 48%;
