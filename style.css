@@ -842,6 +842,8 @@ a img.aligncenter {
 	#ex-column3 {
 		float: none;
 		width: 100%;
+		clear: both;
+		padding-top: 15px;
 	}
 }
 
