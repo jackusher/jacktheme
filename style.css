@@ -808,7 +808,7 @@ a img.aligncenter {
 
 /* SECTION VII: MOBILE AND RESPONSIVE STYLES. */
 /* VII.a. Decreasing desktop viewport. */
-@media only screen and (max-width: 1098px) {
+@media only screen and (max-width: 1161px) {
     #section2-body #section2-short {
 		width: 100%;
 		display: block;
