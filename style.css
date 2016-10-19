@@ -928,3 +928,31 @@ a img.aligncenter {
 		margin-bottom: 0;
 	}
 }
+
+@media only screen and (max-width: 385px) {
+	.site-header nav {
+		margin-left: 0;
+		padding-top: 6.25rem;
+	}
+	
+	.site-header nav ul li:hover,
+	.site-header nav ul li.current-menu-item,
+	.site-header nav ul li.current_page_parent { /* Universal hover li colour. */
+		background-color: #6e6e6e;
+		border-radius: 2px;
+	}
+}
+
+@media only screen and (max-width: 207px) {
+	.site-header nav {
+		margin-left: 0;
+		padding-top: 8.75rem;
+	}
+	
+	.site-header nav ul li:hover,
+	.site-header nav ul li.current-menu-item,
+	.site-header nav ul li.current_page_parent { /* Universal hover li colour. */
+		background-color: #6e6e6e;
+		border-radius: 2px;
+	}
+}
