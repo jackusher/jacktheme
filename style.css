@@ -257,7 +257,15 @@ a img.aligncenter {
 	font-size: 1.75rem;
 }
 
-/* III.a.ii Section-specific. */
+/* III.a.ii. Headshot image. */
+.headshot {
+	width: 208px;
+	height: 206px;
+	margin-bottom: 1.65rem;
+	border-radius: 100px;
+}
+
+/* III.a.iii. Section-specific. */
 .welcome-title {
 	font-size: 3rem;
 	margin-bottom: 2.5rem;
