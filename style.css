@@ -299,6 +299,38 @@ a img.aligncenter {
 	border-left: 2px solid #759ae7;
 }
 
+#section2-body #section2-long p a {
+	text-decoration: none;
+}
+
+#section2-body #section2-long p:last-of-type {
+	margin-bottom: 0;
+}
+
+#section2-body #section2-long p span {
+	display: inline-block;
+	background-color: #82a4e9;
+	padding: 10px 20px;
+	margin-top: 0.5rem;
+}
+
+#section2-body #section2-long p span a {
+	text-decoration: none;
+	color: white;
+}
+
+#section2-body #section2-long p span:hover {
+	background-color: #1957d7;
+}
+
+#section2-body #section2-long p span { /* Transition properties. */
+	-webkit-transition: all 0.275s ease; /* Safari and Chrome */
+  	-moz-transition: all 0.275s ease; /* Firefox */
+	-o-transition: all 0.275s ease; /* IE 9 */
+	-ms-transition: all 0.275s ease; /* Opera */
+	transition: all 0.275s ease;
+}
+
 #section3-body span {
 	margin: 5px;
 	padding: 15px 40px;
@@ -371,6 +403,7 @@ a img.aligncenter {
 	line-height: 60px;
 	white-space: nowrap;
 	color: white;
+	cursor: default;
 }
 
 .skill-item:hover {
