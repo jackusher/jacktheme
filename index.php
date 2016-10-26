@@ -85,8 +85,8 @@ get_header(); ?>
 		</section>
 
 		<section id="cat-blurb">
-			<p>Writings is a place for all of my thoughts, both those formed and those written down at 3am. 'Advertising' and 'Campaigns' will be the most active sections, I think. Adverts currently spark so much contrasting opinion that I'd quite like to be in on the fun, so my thoughts and feelings on brand campaigns are in there. My experiences with marketing, ads, and their digital cousins are also housed in the Ad section.</p>
-			<p>I've loved writing stories since my first reflection on penguin marriage in year 2, so there will be updates on my creative writing within 'Projects'. Also in there will be details of what I'm doing at the moment, be it Wordpress or advertising-oriented. It's the best place to keep an eye on what I'm up to.</p>
+			<p>Writings is a place for all of my thoughts, both those formed and those written down at 3am. 'Advertising' will be the most active section. Adverts currently spark so much contrasting opinion that I'd quite like to be in on the fun, so my thoughts and feelings on brand campaigns are in there. You'll also fine my experiences with marketing, ads, and their digital cousins.</p>
+			<p>'Projects' contains information on what I'm doing at the moment, be it Wordpress or advertising-oriented. It's the best place to keep an eye on what I'm up to, or I used to be up to.</p>
 			<p>'Thoughts' is the container of my general opinions. I'll be selective; little things do annoy me but I won't be tempted to vent about my supermarket shop. Overall, it's mostly design-oriented (thoughts on websites, layout, objects).</p>
 		</section>	
 
