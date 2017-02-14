@@ -1,4 +1,3 @@
-	<!-- Defining the footer class and content in this file. -->
 	<footer class="site-footer">
 		
 		<section id="footer-contact" class="footer">
@@ -16,7 +15,6 @@
 			</nav>
 		</section><!-- /footer-sitemap -->
 		
-		<!-- Creating the 'copyright' location for copyright info. -->
 		<section id="footer-copyright" class="footer">
 			<p>webs by Jack, &copy; <?php echo date('Y');?></p>
 		</section><!-- /footer-copyright -->

@@ -1,8 +1,4 @@
-<?php
-// single.php defines what to do with single post pages.
-
-// Grab the header.
-get_header(); ?>
+<?php get_header(); ?>
 
 <!-- content-wrapper -->
 <div class="content-wrapper">
@@ -11,8 +7,6 @@ get_header(); ?>
 	if (have_posts()) :
 		while (have_posts()) : the_post();
 	
-		// Reference to the content.php file. Post layout is pulled from content.php. If there are any special post types, e.g. galleries, the second argument pushes requests to the correct content-*.php file.
-		// *if* logic: If the post is non-formatted, go to content-single.php. If the post is formatted, then go to respective content-*.php.
 		if (get_post_format() == false) {
 			get_template_part('content', 'single');
 		} else {
@@ -29,7 +23,4 @@ get_header(); ?>
 	
 </div><!-- /content-wrapper -->
 
-<?php	
-// Grab the footer.	
-get_footer();
-?>
+<?php get_footer(); ?>
