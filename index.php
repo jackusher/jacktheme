@@ -80,9 +80,7 @@ get_header(); ?>
 		</section>
 
 		<section id="cat-blurb">
-			<p>Writings is a place for all of my thoughts, both those formed and those written down at 3am. 'Advertising' will be the most active section. Adverts currently spark so much contrasting opinion that I'd quite like to be in on the fun, so my thoughts and feelings on brand campaigns are in there. You'll also fine my experiences with marketing, ads, and their digital cousins.</p>
-			<p>'Projects' contains information on what I'm doing at the moment, be it Wordpress or advertising-oriented. It's the best place to keep an eye on what I'm up to, or I used to be up to.</p>
-			<p>'Thoughts' is the container of my general opinions. I'll be selective; little things do annoy me but I won't be tempted to vent about my supermarket shop. Overall, it's mostly design-oriented (thoughts on websites, layout, objects).</p>
+            <p>Writings is a place for all of my thoughts, whether eloquent or gibberish. <a href="http://jackusher.co.uk/category/advertising/">Advertising</a> will contain my thoughts and feelings on brand campaigns. You'll also find my experiences with marketing, ads, and their digital cousins. <a href="http://jackusher.co.uk/category/projects/">Projects</a> contains information on what I'm doing at the moment. It's the best place to keep an eye on what I'm up to, or I used to be up to.</p>
 		</section>	
 
 	</div><!-- /cats-blurb-wrapper -->
