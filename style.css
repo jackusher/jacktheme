@@ -664,6 +664,10 @@ a img.aligncenter {
 	margin-bottom: 1em;
 }
 
+#cat-blurb a {
+	text-decoration: none;
+}
+
 
 
 /* SECTION IV: SINGLE.PHP. */
@@ -971,9 +975,14 @@ a img.aligncenter {
 }
 
 @media only screen and (max-width: 385px) {
+	.header-title {
+		z-index: 20;
+	}
+
 	.site-header nav {
 		margin-left: 0;
 		padding-top: 6.25rem;
+		z-index: 10;
 	}
 	
 	.site-header nav ul li:hover,
@@ -985,9 +994,14 @@ a img.aligncenter {
 }
 
 @media only screen and (max-width: 207px) {
+	.header-title {
+		z-index: 20;
+	}
+
 	.site-header nav {
 		margin-left: 0;
 		padding-top: 8.75rem;
+		z-index: 10;
 	}
 	
 	.site-header nav ul li:hover,

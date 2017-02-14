@@ -1,13 +1,16 @@
 <?php
+// The file defines all index page behaviours.
 
+// Grab the header.
 get_header(); ?>
 
 <!-- content-wrapper -->
 <div class="content-wrapper">
 
-	<div id="recent-wrapper">
+	<div id="recent-wrapper"><!-- The container masonry element. All mason blocks go in here. -->
 	
-	<?php $categories = get_categories();
+	<?php // Arguments for the WP query to pull in the latest post from each category.
+	$categories = get_categories();
 	
 	foreach ( $categories as $category ) {
 		$args = array( // Running the query arguments through each category on the site.
@@ -26,6 +29,7 @@ get_header(); ?>
 				$query->the_post();
 				?>
 			
+			<!-- post-thumbnail behaviour. Creating a div for the image, and calling a pre-defined image size. Putting a link in. -->
 			<div class="recent-thumbnail">
 				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('masonry-thumbnail'); ?></a>
 			</div><!-- /recent-thumbnail -->
@@ -49,12 +53,13 @@ get_header(); ?>
 
 			<?php } // endwhile ?>
 	
-		</div><!-- /recent-post --><?php
+		</div><!-- /recent-item --><?php
 	
 	} // endif
 	
-	} // end foreach
+	} // end foreach category script.
 	
+	// Use reset to restore original query.
 	wp_reset_postdata(); ?>
 
 	</div><!-- /recent-wrapper -->
@@ -80,13 +85,14 @@ get_header(); ?>
 		</section>
 
 		<section id="cat-blurb">
-            <p>Writings is a place for all of my thoughts, whether eloquent or gibberish. <a href="http://jackusher.co.uk/category/advertising/">Advertising</a> will contain my thoughts and feelings on brand campaigns. You'll also find my experiences with marketing, ads, and their digital cousins. <a href="http://jackusher.co.uk/category/projects/">Projects</a> contains information on what I'm doing at the moment. It's the best place to keep an eye on what I'm up to, or I used to be up to.</p>
+			<p>Writings is a place for all of my thoughts, whether eloquent or gibberish. <a href="http://jackusher.co.uk/category/advertising/">Advertising</a> will contain my thoughts and feelings on brand campaigns. You'll also find my experiences with marketing, ads, and their digital cousins. <a href="http://jackusher.co.uk/category/projects/">Projects</a> contains information on what I'm doing at the moment. It's the best place to keep an eye on what I'm up to, or I used to be up to.</p>
 		</section>	
 
-	</div><!-- /cats-blurb-wrapper -->
+	</div>
 	
 </div><!-- /content-wrapper -->
 
 <?php
+// Grab the footer.
 get_footer();
 ?>

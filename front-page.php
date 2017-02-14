@@ -1,6 +1,7 @@
 <?php
 // The file defines the static home page behaviours.
 
+// Grab the header.
 get_header(); ?>
 
 <!-- content-wrapper -->
@@ -20,5 +21,6 @@ get_header(); ?>
 </div><!-- /content-wrapper -->
 
 <?php
+// Grab the footer.
 get_footer();
 ?>
