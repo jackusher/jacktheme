@@ -1,7 +1,5 @@
 <?php
-// page.php defines what to do with pages if they don't have their own page-*.php file.
 
-// Grab the header.
 get_header(); ?>
 
 <!-- content-wrapper -->
@@ -21,6 +19,5 @@ get_header(); ?>
 </div><!-- /content-wrapper -->
 
 <?php
-// Grab the footer.
 get_footer();
 ?>

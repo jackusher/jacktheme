@@ -1,16 +1,13 @@
 <?php
-// The file defines all index page behaviours.
 
-// Grab the header.
 get_header(); ?>
 
 <!-- content-wrapper -->
 <div class="content-wrapper">
 
-	<div id="recent-wrapper"><!-- The container masonry element. All mason blocks go in here. -->
+	<div id="recent-wrapper">
 	
-	<?php // Arguments for the WP query to pull in the latest post from each category.
-	$categories = get_categories();
+	<?php $categories = get_categories();
 	
 	foreach ( $categories as $category ) {
 		$args = array( // Running the query arguments through each category on the site.
@@ -29,7 +26,6 @@ get_header(); ?>
 				$query->the_post();
 				?>
 			
-			<!-- post-thumbnail behaviour. Creating a div for the image, and calling a pre-defined image size. Putting a link in. -->
 			<div class="recent-thumbnail">
 				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('masonry-thumbnail'); ?></a>
 			</div><!-- /recent-thumbnail -->
@@ -53,13 +49,12 @@ get_header(); ?>
 
 			<?php } // endwhile ?>
 	
-		</div><!-- /recent-item --><?php
+		</div><!-- /recent-post --><?php
 	
 	} // endif
 	
-	} // end foreach category script.
+	} // end foreach
 	
-	// Use reset to restore original query.
 	wp_reset_postdata(); ?>
 
 	</div><!-- /recent-wrapper -->
@@ -90,11 +85,10 @@ get_header(); ?>
 			<p>'Thoughts' is the container of my general opinions. I'll be selective; little things do annoy me but I won't be tempted to vent about my supermarket shop. Overall, it's mostly design-oriented (thoughts on websites, layout, objects).</p>
 		</section>	
 
-	</div>
+	</div><!-- /cats-blurb-wrapper -->
 	
 </div><!-- /content-wrapper -->
 
 <?php
-// Grab the footer.
 get_footer();
 ?>

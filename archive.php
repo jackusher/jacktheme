@@ -3,7 +3,6 @@
 
 get_header(); ?>
 
-<!-- site-content -->
 <div class="content-wrapper">
 	
 	<?php
